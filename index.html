@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
     <h1>Calculator</h1>
-    <input type='text'>
+    <input class='input' type='number'>
         <table>
             <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
+                <td><button class='button' onclick='clear()'>c</button></td>
+                <td><button class='button'>*</button></td>
+                <td><button class='button'>/</button></td>
+                <td><button class='button'><</button></td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
+                <td><button class='button' value='7' onclick='num(7)'>7</button></td>
+                <td><button class='button' value='8' onclick='num(8)'>8</button></td>
+                <td><button class='button' value='9' onclick='num(9)'>9</button></td>
+                <td><button class='button'>-</button></td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td><button class='button' value='4' onclick='num(4)'>4</button></td>
+                <td><button class='button' value='5' onclick='num(5)'>5</button></td>
+                <td><button class='button' value='6' onclick='num(6)'>6</button></td>
+                <td><button class='button'>+</button></td>
+            </tr>
+            <tr>
+                <td><button class='button' value='1' onclick='num(1)'>1</button></td>
+                <td><button class='button' value='2' onclick='num(2)'>2</button></td>
+                <td><button class='button' value='3' onclick='num(3)'>3</button></td>
+                <td><button class='button'>=</button></td>
             </tr>
         </table>
+<script src='script.js'></script>
 </body>
 </html>
